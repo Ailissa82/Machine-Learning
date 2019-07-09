@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+
+
+  <h1>Movie Database Dashboard</h1>
+  <p>Input a movie title and year below...</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Genre and Sentiment Guesser</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+</head>
+
+
+<body></body>
+<div class="jumbotron text-center">
+  <div class="tenor-gif-embed" data-postid="12345147" data-share-method="host" data-width="100%" data-height="  50%
+    data-aspect-ratio="1.7291666666666667"><a
+      href="https://tenor.com/view/cinema-movies-movie-projector-gif-12345147">Cinema Movies GIF</a> from <a
+      href="https://tenor.com/search/cinema-gifs">Cinema GIFs</a></div>
+  <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="row">
+
+  </div>
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2 class="panel-title">Movie Data</h2>
+    </div>
+    <form action="/scrape" method = "POST" target = "_blank">
+      Movie Title: <input type="text" name="movietitle" id="movietitle" required ><br>
+      Movie Release Year: <input type="text" name="movieyear" required><br>
+      <input type = "submit" value = "Search">
+      <!-- <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Updata (get it?)!</a></p> -->
+    </form>
+       
+
+  </div>
+  </body>
+
+</html>

@@ -1,0 +1,30 @@
+
+h1 {
+    /* Put a 15-pixel margin at the bottom of the heading. */
+    margin-bottom: 15px;
+    /* Change the size of your font to 60 pixels high. */
+    font-size: 60px;
+    /* This will color the heading font white. */
+    color: white;
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    text-align: center;
+    background-color: black;
+}
+p {
+    font-size: 20px; 
+    color: black;
+    text-align: center;
+}
+
+h2 {
+    font-size: 50px; 
+    color: black;
+    text-align: center;
+    /* background-color: red */
+  }
+ 
+Collapse
+
+
+
+Message Input

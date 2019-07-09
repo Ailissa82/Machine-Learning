@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- <h1>Movie Database Dashboard Results</h1> -->
+  <!-- <p>Input a movie title and year below...</p> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Genre and Sentiment Guesser</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/style.css"> 
+
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>{{ movie_data.movieTitle }}, {{ movie_data.movieYear }}</h1>
+      <p>{{ movie_data.plot }}</p>
+      
+    </div>
+  
+    <img src= {{ movie_data.movieImg }}  alt="Movie Featured Image" >
+    <div class="col-md-4">
+      <img src = "{{url_for('static', filename='wordcloud.png')}}" alt = "Word Cloud" height = "375">  
+        </div>
+    <h3> <strong>IMDB Rating:</strong>  {{ movie_data.imdbRating }}</h3>
+    <h3> <strong>Sentiment derived from review text:</strong> {{ movie_data.review_sentiment }}</h3>
+    <h3> <strong>Movie Genre from IMDB: </strong>{{ movie_data.genre }}</h3>
+    <h3> <strong>Movie Genre derived from Machine Learning:</strong>  {{movie_data.pred_genre}} </h3>
+    
+    </div>
+  
+  </div>
+</body>
+
+</html>
